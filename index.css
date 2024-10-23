@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{   
+    background-color: hsl(47, 88%, 63%);   
+    font-family: "Figtree", sans-serif;
+    color:hsl(0, 0%, 7%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+article{
+    width:100%;
+    max-width: 21rem;
+    background-color: white;
+    text-align: left;
+    padding: 24px;
+    border: 1px solid hsl(0, 0%, 42%);
+    border-radius: 20px;
+    box-shadow: 5px 5px hsl(0, 0%, 7%);
+}
+
+.thumbnail{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.content{
+    width:100%;
+    margin-bottom:24px;
+}
+
+.category{
+    width: fit-content;
+    padding: 4px 12px;
+    background-color: hsl(47, 88%, 63%) ;
+    border-radius: 4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.category p{
+    font-weight:800;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.publish_date{
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.title{
+    
+    margin-top: 0;
+    margin-bottom: 12px;
+    
+}
+
+.title a{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    color:hsl(0, 0%, 7%);
+    text-decoration: none;
+}
+.title a:hover{
+    color:hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.description{
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    color:hsl(0, 0%, 42%);
+    margin:0;
+}
+
+
+.author{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.author img{
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.author p{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+
+.attribution {
+    background-color: white;
+    font-size: 11px;
+    color:hsl(0, 0%, 7%);
+    padding: 8px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(0, 0%, 7%);
+  }
+
+  .attribution a:hover{
+    color: hsl(47, 88%, 63%) ;
+  }
+
+  .attribution a:active{
+    color: hsl(0, 0%, 7%);
+  }
+
+
+@media (min-width:768px){
+    main{
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1440px){
+    main{
+        flex-direction: row;
+    }
+}
